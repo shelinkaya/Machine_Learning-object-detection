@@ -107,7 +107,7 @@ class FiberDetection(datasets.VisionDataset):
     def __len__(self) -> int:
         return len(self.ids)
         
- ##define dataset path here and assign cocos to .json file
+#define dataset path here and assign cocos to .json file
 
 dataset_path = "fiber_dataset"
 coc = COCO(os.path.join(dataset_path,"train","annotations.json"))
@@ -249,7 +249,7 @@ def train_one_epoch(model, optimizer, data_loader, device, epoch, print_freq):
     ))
     
     
-    #define number of epoch and run your model training
+ #define number of epoch and run your model training
 num_epochs = 5
 
 for epoch in range(num_epochs):
